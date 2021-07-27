@@ -72,13 +72,17 @@ class _SignupState extends State<Signup> {
                             color: Colors.black,
                             blurRadius: 6.0),
                       ]),
-                  child: Center(
-                    child: Text(
-                      "Signup",
-                      style: GoogleFonts.raleway(
-                        color: Colors.white,
-                        fontWeight: FontWeight.w500,
-                        fontSize: 18,
+                  child: InkWell(
+                    onTap: () => Navigator.push(context,
+                        MaterialPageRoute(builder: (context) => LoginPage())),
+                    child: Center(
+                      child: Text(
+                        "Signup",
+                        style: GoogleFonts.raleway(
+                          color: Colors.white,
+                          fontWeight: FontWeight.w500,
+                          fontSize: 18,
+                        ),
                       ),
                     ),
                   ),

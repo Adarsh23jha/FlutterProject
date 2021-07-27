@@ -1,3 +1,4 @@
+import 'package:ecommerce/Pages/Cart.dart';
 import 'package:flutter/material.dart';
 
 // import 'package:ecommerce/theme/colors.dart';
@@ -111,6 +112,7 @@ class _ProductDetailPageState extends State<ProductDetailPage> {
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
+                    //Back Button!!
                     Flexible(
                       flex: 3,
                       fit: FlexFit.loose,
@@ -130,26 +132,20 @@ class _ProductDetailPageState extends State<ProductDetailPage> {
                             EdgeInsets.symmetric(vertical: 10, horizontal: 10),
                       ),
                     ),
-                    // Expanded(
-                    //   flex: 3,
-                    //   child: Center(
-                    //     child: Text('Detail',
-                    //         style: TextStyle(
-                    //           fontWeight: FontWeight.w700,
-                    //           fontSize: 22,
-                    //         )),
-                    //   ),
-                    // ),
+                    //Cart Button !!
                     Flexible(
                       flex: 3,
                       fit: FlexFit.loose,
                       child: RawMaterialButton(
                         elevation: 2,
-                        onPressed: () {},
+                        onPressed: () {
+                          Navigator.push(context,
+                              MaterialPageRoute(builder: (context) => Cart()));
+                        },
                         constraints: BoxConstraints(
                           minWidth: 10,
                         ),
-                        child: Icon(Icons.favorite_border,
+                        child: Icon(Icons.shopping_cart,
                             color: Colors.black, size: 30),
                         shape: RoundedRectangleBorder(
                           borderRadius: BorderRadius.circular(12),
@@ -173,7 +169,7 @@ class _ProductDetailPageState extends State<ProductDetailPage> {
                   topLeft: Radius.circular(30),
                   topRight: Radius.circular(30),
                 ),
-                color: Colors.grey,
+                color: Colors.grey[500],
               ),
               width: screenWidth,
               child: Column(

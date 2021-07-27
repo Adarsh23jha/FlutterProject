@@ -5,7 +5,7 @@ import 'package:flutter/material.dart';
 import 'package:ecommerce/Pages/Signup.dart';
 
 class LoginPage extends StatefulWidget {
-  const LoginPage({Key? key}) : super(key: key);
+  // const LoginPage({Key? key}) : super(key: key);
 
   @override
   _LoginPageState createState() => _LoginPageState();

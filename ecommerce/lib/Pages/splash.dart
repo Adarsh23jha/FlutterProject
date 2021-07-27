@@ -28,7 +28,7 @@ class _SplashPageState extends State<SplashPage> {
                 child: Center(
                   child: Text(
                     "Welcome",
-                    style: GoogleFonts.raleway(
+                    style: GoogleFonts.courgette(
                         fontSize: 70, color: Color(0xff3949AB)),
                   ),
                 ),

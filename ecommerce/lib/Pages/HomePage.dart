@@ -37,7 +37,6 @@ class _HomePageState extends State<HomePage> {
                 fontSize: 40, color: Color.fromRGBO(55, 71, 166, 1)),
           ),
         ),
-      
         body: GestureDetector(
           onTap: () => Navigator.push(
               context, MaterialPageRoute(builder: (context) => Product())),
